@@ -5,8 +5,7 @@ function Contact() {
     const formRef = useRef();
     const[message, setMessage] = useState("");
 
-    // console.log(import.meta.env.VITE.SERVICE_ID);
-    // console.log(import.meta.env.VITE.TEMPLATE_ID);
+    console.log("EMAILJS:", emailjs);
     
 
     const sendEmail = (e) => {
