@@ -1,37 +1,46 @@
 import { useRef, useState } from "react";
-
-
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-    const form = useRef();
+    const formRef = useRef();
     const[message, setMessage] = useState("");
+
+    // console.log(import.meta.env.VITE.SERVICE_ID);
+    // console.log(import.meta.env.VITE.TEMPLATE_ID);
+    
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.
             sendForm(
-                "service_p9zws8t",
-                "template_1v0m5s9",
-                form.current,
-            {
-                publicKey: "Zt9n2s8Xo5mLh3a7"
-            }
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMPLATE_ID,
+                formRef.current,
+                import.meta.env.VITE_PUBLIC_KEY
         )
         .then(
             () => {
                 setMessage("Message sent successfully!");
+                console.log("Email sent!");
+                
+            },
+            (error) => {
+                setMessage("Failed to send message. Please try again. ", error);
+                console.log("Error: ", error);
+                
             }
         );
     };
+
     return (
         <section className="pages contact-page">
             <h2><strong>Contact Me</strong></h2>
             
-            <form ref={form} onSubmit={sendEmail} className="contact-form">
-                <input type="text" name="user_name" placeholder="Your Name" required />
-                <input type="email" name="user_email" placeholder="Your Email" required />
-                <textarea name="user_message" placeholder="Your Message" required></textarea>
+            <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button> 
             </form>
 
