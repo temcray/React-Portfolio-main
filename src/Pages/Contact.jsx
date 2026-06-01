@@ -5,9 +5,6 @@ function Contact() {
     const formRef = useRef();
     const[message, setMessage] = useState("");
 
-    console.log("EMAILJS:", emailjs);
-    
-
     const sendEmail = (e) => {
         e.preventDefault();
 
