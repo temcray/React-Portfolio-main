@@ -26,8 +26,8 @@ function Hero() {
         </Link>
 
         <a
-          onClick={() => window.open("/Tatiana_Resume.pdf")}
-          href="/Tatiana_Resume.pdf"
+          onClick={() => window.open("/Tatiana_Resume-2.pdf")}
+          href="/Tatiana_Resume-2.pdf"
           target="_blank"
           rel="Resume"
           className="btn outline-btn"
