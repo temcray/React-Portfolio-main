@@ -6,24 +6,24 @@ function About() {
 
             <div className="about-section">
             <p>
-                I'm Tatiana McCray, a front-end web developer who enjoys building clean,
-                responsive, and user-centered web applications.
+               I'm a Front-End Developer with a Passion for User Experience who believes great websites start with understanding people. 
+               I enjoy building clean, responsive React applications, 
+               but what matters most to me is how users feel when they use them. 
+               Every project I create is inspired by real experiences and designed to solve real problems.
             </p>
 
             <p>
-                My main focus is how users feel when they visit a website, 
-                how smoothly they move through it, and how accessible and welcoming the experience feels for people of different ages and backgrounds.
-
-                Many of my projects are inspired by real-life experiences or ideas that genuinely inspire me creatively. 
-                I enjoy building applications that combine clean design,usability, and functionality while still feeling approachable and easy to navigate.
-
-                I've worked with React, JavaScript, CSS, EmailJS, routing, responsive layouts, component-based design, 
-                and multimedia integration such as video content within web applications.
+               My projects reflect different parts of my life and the lessons I've learned. 
+               Stillwater Shelter was inspired by my own experience living in a shelter. 
+               I wanted to create a website where people seeking help feel respected, supported, and treated with dignity. 
+               Peaceful Streams reflects my Christian faith and the foundation that carried me through difficult seasons. 
+               I built it to encourage others and create a peaceful space where people can connect with Scripture and find hope. 
+               Kickstart Boys Soccer Team was inspired by the importance of community and giving young boys positive opportunities to build confidence, teamwork, and discipline through sports.
             </p>
 
             <p>
-                I'm currently building project that show my growth in front-end development,
-                including resource apps, calming user experiences, and portfolio-ready React applications.
+                As a developer, I focus on creating user-friendly, accessible, and responsive experiences that are simple to navigate and meaningful to the people using them. 
+                I believe technology should do more than work—it should make people feel welcomed, understood, and supported.
             </p>
             </div>
         </section>
